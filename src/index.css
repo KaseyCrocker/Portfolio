@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primary-color: #deeaee;
+  --secondary-color: #034f84;
+  --tertiary-color: #80ced6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: var(--primary-color);
+}
+
+header {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--secondary-color);
+}
+
+header h1 {
+  font-size: 36px;
+  background-color: var(--tertiary-color);
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul, .me div ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+header nav ul li a, .me div ul li {
+  padding: 5px 6px 3px 6px;
+  margin: 5px 9px 0 9px;
+  font-size: 1.55vw;
+  color: var(--tertiary-color);
+  border-bottom: solid 3px var(--tertiary-color);
+}
+
+.me div ul li {
+  color: var(--secondary-color);
+  border-bottom: solid 3px var(--secondary-color);
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+.hero {
+background-image: url("./assets/andromeda.jpg");
+background-size: cover;
+display: flex;
+justify-content: right;
+align-items: flex-end;
+background-position: 80%;
+height: 300px;
+}
+
+.subtitle {
+  background-color: var(--tertiary-color);
+  margin: 20px 20px;
+  font-size: 50px;
+  padding: 0 20px;
+}
+
+/* About me section */
+
+.section h1, .me h1 {
+  border-right: solid 3px;
+  text-align: right;
+  padding: 10px;
+  width: 25%;
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+.section, .me {
+  display: flex;
+}
+
+.me a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.links, .me div {
+  width: 75%;
+  margin: 10px 50px 10px 30px;
+}
+
+#about-me div {
+  display: flex;
+}
+
+#about-me div div {
+  width: auto;
+  margin: 10px 0 10px 30px;
+}
+
+#headshot {
+  width: 150px;
+}
+
+.work-img-others {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work-img-others a {
+  flex: 0 0 49%;
+}
+
+.work-img {
+  background-image: url("./assets/beach-sunset.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border: solid 3px var(--tertiary-color);
+  opacity: .5;
+  margin: 1% 0;
+}
+
+.small-img {
+  border: solid 3px var(--tertiary-color);
+  height: 200px;
+  flex: 0 0 49%;
+  flex-wrap: wrap;
+  position: relative;
+  opacity: .5;
+  margin: 1% 0;
+}
+
+#led-wall {
+  background-image: url("./assets/LED-Wall-Benefits.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#calculator {
+  background-image: url("./assets/Meal-time-roulette-screenshot.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#quick-track {
+  background-image: url("./assets/quick-track.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#run-buddy {
+  background-image: url("./assets/run-buudy-screenshot.png");
+  background-size: cover;
+}
+
+.work-img div, .small-img div {
+  background-color: var(--tertiary-color);
+  margin-top: 100px;
+  width: fit-content;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.work-img div {
+  margin-top: 300px;
+}
+
+.work-img div div, .small-img div div {
+  font-size: 13px;
+  padding: 5px 0 0 0;
+  margin: 0;
+  font-weight: 100;
+}
+
+.section .work-img:hover, .section .small-img:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1040px) {
+
+  .section, .me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section h1, .me h1 {
+    border-bottom: solid 3px;
+    text-align: center;
+    width: 95%;
+    border-right: none;
+  }
+
+  .links, .me div {
+    width: 75%;
+    margin: 10px 30px;
+    text-align: center;
+  }
+  
+  #about-me div {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 5px 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .links, .me div {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .work-img-others a {
+    flex: 0 0 100%;
+  }
+}
