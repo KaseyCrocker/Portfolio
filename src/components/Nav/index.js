@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 
-function Nav() {
+function Navbar() {
     
     return (
         <header>
             <h1>
-                <a href="https://kaseycrocker.github.io/kaseys-portfolio/">KASEY CROCKER</a>
+                <a href="/">KASEY CROCKER</a>
             </h1>
             <nav>
                 <ul>
-                    <li>
-                      <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                      <a href="#work">Work</a>
-                    </li>
-                    <li>
-                      <a href="#contact-me">Contact Me</a>
-                    </li>
+                    <Nav.Link
+                        as={Link}
+                        to="/about"
+                    >
+                        <span className='navbar'>About me</span>
+                    </Nav.Link>
+                    <Nav.Link
+                        as={Link}
+                        to="/portfolio"
+                    >
+                        <span className='navbar'>Portfolio</span>
+                    </Nav.Link>
+                    <Nav.Link
+                        as={Link}
+                        to="/contact"
+                    >
+                        <span className='navbar'>Contact</span>
+                    </Nav.Link>
                 </ul>
             </nav>
         </header>
     );
 }
 
-export default Nav;
+export default Navbar;

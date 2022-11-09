@@ -59,7 +59,7 @@ header nav ul, .me div ul {
   justify-content: space-evenly;
 }
 
-header nav ul li a, .me div ul li {
+header nav ul li a, span, .me div ul li {
   padding: 5px 6px 3px 6px;
   margin: 5px 9px 0 9px;
   font-size: 1.55vw;
@@ -73,7 +73,7 @@ header nav ul li a, .me div ul li {
   font-weight: bold;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, span:hover {
   background: var(--tertiary-color);
   color: var(--secondary-color);
 }
@@ -95,19 +95,72 @@ height: 300px;
   padding: 0 20px;
 }
 
+.navActive {
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+span[role="img"] {
+  cursor: default;
+}
+
+form {
+  width: 40%;
+  padding-left: 10px;
+}
+
+form div {
+  margin: 4px;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary-color);
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+button {
+	background: var(--secondary-color);
+	border: 0;
+	border-radius: 5px;
+	color: var(--primary-color);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 30px;
+	padding: 10px 15px;	
+}
+
 /* About me section */
 
 .section h1, .me h1 {
-  border-right: solid 3px;
-  text-align: right;
   padding: 10px;
-  width: 25%;
   font-size: 45px;
   margin: 10px 0;
+  border-bottom: solid 3px;
+  text-align: center;
+  width: 95%;
 }
 
 .section, .me {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .me a {

@@ -7,7 +7,7 @@ function About() {
         <section className="hero">
           <h1 className="subtitle">Space!</h1>
         </section>
-        <section id="about-me" class="me">
+        <section id="about-me" className="me">
           <h1>ABOUT ME</h1>
           <div>
             <img
