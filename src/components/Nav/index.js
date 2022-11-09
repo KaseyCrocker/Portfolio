@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <header>
             <h1>
-                <a href="/">KASEY CROCKER</a>
+                <a href="/about">KASEY CROCKER</a>
             </h1>
             <nav>
                 <ul>
