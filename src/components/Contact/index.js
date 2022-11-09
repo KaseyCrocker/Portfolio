@@ -15,7 +15,7 @@ function Contact() {
                 if (!e.target.value.length) {
                   setErrorMessage(`${e.target.name} is required.`);
                 } else {
-                  setErrorMessage('Your email is valid asf');
+                  setErrorMessage('');
                 }
             }
         }  

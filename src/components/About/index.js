@@ -3,10 +3,6 @@ import React from 'react';
 
 function About() {
     return (
-        <div>
-        <section className="hero">
-          <h1 className="subtitle">Space!</h1>
-        </section>
         <section id="about-me" className="me">
           <h1>ABOUT ME</h1>
           <div>
@@ -20,7 +16,6 @@ function About() {
             </div>
           </div>
         </section>
-        </div>
     );
 }
 

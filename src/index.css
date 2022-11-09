@@ -262,6 +262,42 @@ button {
 .section .work-img:hover, .section .small-img:hover {
   opacity: 1;
 }
+.footer {
+  background-color: var(--tertiary-color);
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  position: relative;
+
+}
+
+.footer-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 7%;
+}
+
+.footer-copywright {
+  text-align: center;
+}
+
+.footer-body {
+  z-index: 1;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.social-icons {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 @media screen and (max-width: 1040px) {
 
