@@ -17,12 +17,12 @@ function Portfolio() {
               </a>
         
               <div className="work-img-others">
-                <a href="/">
+                <a href="https://intense-harbor-60080.herokuapp.com/">
                   <div id="led-wall" className="small-img">
                     <div>
-                      LED Wall
+                      Quick Track v2
                       <div>
-                        Node/IoT
+                        MERN
                       </div>
                     </div>
                   </div>
